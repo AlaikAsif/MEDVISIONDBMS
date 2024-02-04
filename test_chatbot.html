@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir = "ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chatbot</title>
+    <link rel = "stylesheet" href = "test_chatbot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+    <script src = "test_chatbot.js" defer></script>
+</head>
+<div class="show-chatbot" style="display: block;">
+    <button class="chatbot-toggler" id="chatbot-toggler" onclick="toggle_chatbot()">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">smart_toy</span>
+    </button>
+    <div class="chatbot" id="chatbot" style="display: none;">
+        <header>
+            <h2>ChatBot</h2>
+            <span class="material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there ! How can I help you today ...</p></br>
+            </li>
+        </ul>
+        <div class="chat-input"> 
+            <textarea placeholder=" Enter a message..." rows="1" required></textarea>
+            <span id = "send-button" class="material-symbols-outlined" >send</span>
+        </div>
+    </div>
+</div>
+<script>
+    
+    function toggle_chatbot(){
+        console.log("running");
+        let but = document.getElementById("chatbot");
+        let button = document.getElementById("chatbot-toggler"); 
+        console.log(but.style.display);
+        if (but.style.display == ""){
+            but.style.display = "none";
+            button.innerHTML = '\n<span class="material-symbols-outlined">mode_comment</span>\n <span class="material-symbols-outlined">smart_toy</span>\n    '
+        }
+        else if(but.style.display == "none"){
+            but.style.display = "";
+            button.innerHTML = '\n<span class="material-symbols-outlined">mode_comment</span>\n <span class="material-symbols-outlined">close</span>\n    '
+        }
+    }
+</script>
+</html>

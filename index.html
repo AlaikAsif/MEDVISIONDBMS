@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedVision</title>
+    <link href="./project.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div id="nav">
+        <div class="navbar">
+            <button id="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+            
+            <div class="logo">
+                <h1 class="logo-text"><span>Med</span>Vision</h1>
+            </div>
+            
+            <div class="login">
+                <button id="loginbtn">
+                    <img id="login-img" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/login-rounded-right.png" alt="login-rounded-right"/>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="popup">
+        <div id="popup-form" class="popup-form-container">
+            <div id="signup-side" class="signup-side">
+                <h2>Sign Up</h2>
+                <form class="form">
+                    <div class="text_field">
+                    <input type="text" id="first-name" name="first-name" required>
+                    <span></span>
+                    <label for="first-name">First Name:</label>
+                    </div>
+                    <div class="text_field">
+                    <input type="text" id="last-name" name="last-name" required>
+                    <span></span>
+                    <label for="last-name">Last Name:</label>
+                    </div>
+                    <div class="text_field">
+                    <input type="email" id="email" name="email" required>
+                    <span></span>
+                    <label for="email">Email:</label>
+                    </div>
+                    <div class="text_field">
+                    <input type="password" id="signup-password" name="signup-password" required>
+                    <span></span>
+                    <label for="signup-password">Password:</label>
+                    </div>
+                    <div class="text_field">
+                    <input type="tel" id="phone-number" name="phone-number" required>
+                    <span></span>
+                    <label for="phone-number">Phone Number:</label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                    
+                </form>
+            </div>
+            <div id="login-side" class="login-side">
+                <h2>Login</h2>
+                <form class="form">
+                    
+                    <div class="text_field">
+                    <input type="text" id="login-username" name="login-username" required>
+                    <span></span>
+                    <label for="login-username">Username:</label>
+                    </div>
+                    <div class="text_field">
+                    <input type="password" id="login-password" name="login-password" required>
+                    <span></span>
+                    <label for="login-password">Password:</label>
+                    </div>
+                    <div class="pass">Forgot password?</div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div id="layer" class="">
+                <div id="closepopup">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                    
+                </div>
+                <div class="content">
+                    <div class="content-area">
+                        <img src="./resources/medkit.png" alt="medical kit"\>
+                    </div>
+                    <div class="content-change">
+                        <button class="signup-link">Click here to sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="menu-container">
+        
+    <div id="main-menu">
+        <div id="menu" data-state="close">
+                <div id="closebtn"> <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+              </svg></button> </div>
+                <div id="menu-items">
+                    <a href="./index.html" class="menu-item">Home</a>
+                    <a href="./about.html" class="menu-item">About</a>
+                    <a href="./faq.html" class="menu-item">FAQ</a>
+                    <a href="/" class="menu-item">...</a>
+                    
+                </div>
+                <div id="menu-background"></div>
+                <div id="menu-image" ></div>
+            </div>
+        </div>
+    </div>
+
+   <!-- body -->
+    
+    <div class="main">
+        <div class="hero">
+            <div class="subhero">
+                <h1 class="hero-text"><span>Med</span>Vision</h1>
+                <div class="subhero-button">
+                    <button class="explore-button" style="justify-content: center;">Explore <svg xmlns="http://www.w3.org/2000/svg" style="padding-left: 5px;" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg></button>
+                    <button class="about-button" style="justify-content: center;">About US  <svg xmlns="http://www.w3.org/2000/svg"  style="padding-left: 5px;"width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg></button>
+                </div>
+            </div>
+            <video src="./resources/hero.mp4" type="video/mp4" class="vidbg" playsinline autoplay muted loop></video>
+        </div>
+
+        <div class="body-one" id="body-one">
+            <div class="text-side">
+                <div class="body-one-text animate-left">
+                    <h1 style="font-size: clamp(0.5rem,2.5rem,2.5rem); color: #561919;">DIVE INTO THE FUTURE OF MEDICAL TRAINING AND EDUCATION</h1>
+                </div>
+            </div>
+            <div class="slider-container animate-right">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img src="./resources/Firefly augmented reality glasses and students 18143.jpg" alt="Image 1" id="slide-1">
+                              
+                        <img src="./resources/Firefly doctors teaching students have a training in the examination room 15400.jpg" alt="Image 2" id="slide-2">
+                        
+                        <img src="./resources/Firefly researcher checking ar smart glasses 34517.jpg" alt="Image 3" id="slide-3">
+                                
+                        <img src="./resources/Firefly students studying 3d models of human body parts 18143.jpg" alt="Image 4" id="slide-4">
+                     
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            
+        </div>
+        
+        <div class="body-two">
+            <span class="animate">Join Us On This Journey Today</span>
+        </div>
+        
+        <div class="body-three">
+            <div class="objectives-container">
+                <h2 class="animate">Our Objectives</h2>
+                <p class="animate">Our project idea for Augmented Reality Medical Training and Patient Education aligns with several Sustainable Development Goals (SDGs), but one of the most relevant SDGs is:</p>
+                <p class="animate">Our project contributes to improving healthcare by enhancing medical training and patient education, potentially reducing medical errors and improving patient outcomes, which are aligned with the objectives of SDG 3.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="show-chatbot" style="display: block;">
+        <button class="chatbot-toggler" id="chatbot-toggler" onclick="toggle_chatbot()">
+            <span class="material-symbols-outlined">mode_comment</span>
+            <span class="material-symbols-outlined">smart_toy</span>
+        </button>
+        <div class="chatbot" id="chatbot" style="display: none;">
+            <header>
+                <h2>ChatBot</h2>
+                <span class="material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <p>Hi there ! How can I help you today ...</p></br>
+                </li>
+            </ul>
+            <div class="chat-input"> 
+                <textarea placeholder=" Enter a message..." rows="1" required></textarea>
+                <span id = "send-button" class="material-symbols-outlined" >send</span>
+            </div>
+        </div>
+    </div>
+    
+        
+       
+    
+    
+<script src ="./index.js"></script>
+<script src ="./menu.js"></script>
+<script src ="./buttonclicks.js"></script>
+<script src ="./login.js"></script>
+<script src="./navbar.js"></script>
+<script src="./scroll.js"></script>
+<script src = "./test_chatbot.js" defer></script>
+</body>
+</html>
